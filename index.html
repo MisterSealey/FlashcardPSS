@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class Clash — Music Review Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0E0822;--bg-hi:#2A1654;--card1:#36206B;--card2:#1B0F3A;--chrome:#1A0E33;--chrome2:#271447;--border:#3A2A66;--accent:#C7E84A;--accent-bright:#E4FF5A;--ink:#152400;--white:#F4F1FA;--dim:#9A8FC4;--green:#54E0A0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:radial-gradient(circle at 50% -10%, var(--bg-hi) 0%, var(--bg) 62%);color:var(--white);font-family:"Inter",system-ui,sans-serif;min-height:100vh;padding:34px clamp(14px,3vw,28px) 60px;-webkit-font-smoothing:antialiased;}
+  .display{font-family:"Barlow Condensed","Arial Narrow",sans-serif;}
+  header{text-align:center;margin-bottom:30px;}
+  .formtag{display:inline-block;font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:12px;color:var(--ink);background:var(--accent);padding:5px 18px;border-radius:999px;margin-bottom:14px;}
+  header h1{font-family:"Barlow Condensed",sans-serif;font-weight:800;letter-spacing:.02em;text-transform:uppercase;font-size:clamp(40px,8vw,76px);line-height:.9;color:var(--white);text-shadow:0 4px 0 rgba(0,0,0,.35);}
+  header h1 .acc{color:var(--accent-bright);}
+  header .sub{color:var(--dim);font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin-top:8px;}
+
+  .hub{max-width:1040px;margin:0 auto;}
+  section{margin-bottom:34px;}
+  .sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+  .sec-head h2{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:22px;color:var(--accent-bright);}
+  .sec-head p{color:var(--dim);font-size:13px;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;}
+
+  a.tile{display:flex;flex-direction:column;justify-content:space-between;gap:18px;text-decoration:none;background:linear-gradient(180deg,var(--card1) 0%, var(--card2) 100%);border:1px solid var(--border);border-radius:16px;padding:20px 20px 18px;min-height:140px;transition:.16s;position:relative;overflow:hidden;}
+  a.tile:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 16px 40px rgba(0,0,0,.45);}
+  a.tile .top{display:flex;align-items:center;justify-content:space-between;}
+  a.tile .badge{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:var(--ink);background:var(--accent);padding:3px 10px;border-radius:999px;}
+  a.tile .ico{font-size:22px;opacity:.85;}
+  a.tile h3{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:21px;color:var(--white);line-height:1.04;}
+  a.tile p{color:var(--dim);font-size:12.5px;line-height:1.45;margin-top:4px;}
+  a.tile .go{font-family:"Barlow Condensed",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:12px;color:var(--accent-bright);}
+
+  a.tile.wide{grid-column:1/-1;}
+  a.tile.gen{background:linear-gradient(110deg,#2c1856 0%, #16203a 100%);}
+
+  footer{max-width:1040px;margin:26px auto 0;text-align:center;color:var(--dim);font-size:12px;letter-spacing:.04em;line-height:1.7;}
+  footer b{color:var(--accent);}
+</style>
+</head>
+<body>
+<header>
+  <span class="formtag">Penal Secondary · Music</span>
+  <h1 class="display">Class <span class="acc">Clash</span></h1>
+  <div class="sub">Music Review Hub · Term III</div>
+</header>
+
+<div class="hub">
+
+  <section>
+    <div class="sec-head"><h2>Flashcards</h2><p>Solo study — tap, flip, rate yourself</p></div>
+    <div class="grid">
+      <a class="tile" href="Class_Clash_Flashcards_Form_1.html"><div class="top"><span class="badge">Form 1</span><span class="ico">🎴</span></div><div><h3>Form 1 Flashcards</h3><p>Stave, clefs, note values, rhythm &amp; rests.</p></div><span class="go">Study →</span></a>
+      <a class="tile" href="Class_Clash_Flashcards_Form_2.html"><div class="top"><span class="badge">Form 2</span><span class="ico">🎴</span></div><div><h3>Form 2 Flashcards</h3><p>Dynamics, ties &amp; dots, accidentals, tempo.</p></div><span class="go">Study →</span></a>
+      <a class="tile" href="Class_Clash_Flashcards_Form_3.html"><div class="top"><span class="badge">Form 3</span><span class="ico">🎴</span></div><div><h3>Form 3 Flashcards</h3><p>Scales, keys, triads, intervals &amp; form.</p></div><span class="go">Study →</span></a>
+      <a class="tile" href="Class_Clash_Flashcards_Form_4.html"><div class="top"><span class="badge">Form 4 · CSEC</span><span class="ico">🎴</span></div><div><h3>Form 4 Flashcards</h3><p>Genres, Baroque cantata, score reading.</p></div><span class="go">Study →</span></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Board Games</h2><p>Whole-class — project it, split into teams</p></div>
+    <div class="grid">
+      <a class="tile" href="Class_Clash_Form_1.html"><div class="top"><span class="badge">Form 1</span><span class="ico">🎮</span></div><div><h3>Form 1 Board</h3><p>Two rounds, Power Plays, team scoring.</p></div><span class="go">Play →</span></a>
+      <a class="tile" href="Class_Clash_Form_2.html"><div class="top"><span class="badge">Form 2</span><span class="ico">🎮</span></div><div><h3>Form 2 Board</h3><p>Two rounds, Power Plays, team scoring.</p></div><span class="go">Play →</span></a>
+      <a class="tile" href="Class_Clash_Form_3.html"><div class="top"><span class="badge">Form 3</span><span class="ico">🎮</span></div><div><h3>Form 3 Board</h3><p>Two rounds, Power Plays, team scoring.</p></div><span class="go">Play →</span></a>
+      <a class="tile" href="Class_Clash_Form_4.html"><div class="top"><span class="badge">Form 4 · CSEC</span><span class="ico">🎮</span></div><div><h3>Form 4 Board</h3><p>Two rounds, Power Plays, team scoring.</p></div><span class="go">Play →</span></a>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>Board Generator</h2><p>Build a fresh random board from any deck</p></div>
+    <div class="grid">
+      <a class="tile wide gen" href="Class_Clash_Generator.html"><div class="top"><span class="badge">All decks</span><span class="ico">⚙️</span></div><div><h3>Class Clash Generator</h3><p>Pick a deck, hit New Board for a fresh game every time. Add your own clues, import a spreadsheet, and build decks for any subject.</p></div><span class="go">Open generator →</span></a>
+    </div>
+  </section>
+
+</div>
+
+<footer>Tap any card to open it — it runs right in the browser, on phone or laptop. <b>Class Clash</b></footer>
+</body>
+</html>
